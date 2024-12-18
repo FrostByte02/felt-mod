@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "felt",
+	"version": "${version}",
+	"name": "Felt Mod",
+	"description": "All hail felt!",
+	"authors": [
+		""
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/felt/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nils.felt.FeltMod"
+		],
+		"fabric-datagen": [
+			"net.nils.felt.FeltModDataGenerator"
+		],
+		"client": [
+			"net.nils.felt.FeltModClient"
+		]
+	},
+	"mixins": [
+		"felt.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
